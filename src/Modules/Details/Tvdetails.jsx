@@ -1,13 +1,18 @@
 import React, { useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { Col, Row } from 'react-bootstrap'
-import Sidenav from '../../Sidenav'
-import {Tvdata } from '../Data/Tvdata'
+import Sidenav from '../../Componends/Sidenav'
+
+
+import {Tvdata } from '../../Data/Tvdata'
+
+import Header from '../../Componends/Header'
+
 
     function Tvdetails() {
     const [cart , setCart] = useState(0)
     let { id } = useParams()
-    let productDet =Tv.find((item) => item.id == id)
+    let productDet = Tvdata.find((item) => item.id == id)
     return (
         <div>
 
@@ -25,12 +30,11 @@ import {Tvdata } from '../Data/Tvdata'
                 <p>{productDet.Color}</p>
                 <p>{productDet.Brand}</p>
                 <p>{productDet.Price}</p>
-                <p className='rating'>{e.rating} { <FaStar /> } <FaStar /> <FaStar /></p>
 
              <button className='btn btn-outline-primary' onClick={()=>setCart(cart+1)}>add to cart</button>
          </div>
          <div className='product'>
-           <img src={productDet.Image} style={{ width: "300px" }} alt="" />
+           <img src={productDet.image} style={{ width: "300px", height:"200px" }} alt="" />
          </div>
         </div>
     </Col>

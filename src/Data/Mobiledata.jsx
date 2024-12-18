@@ -1,5 +1,5 @@
 
-export const Products=[
+export const Mobiledata=[
         {
          id: 1,
          Brand:"Apple iphone 15",

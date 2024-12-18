@@ -1,6 +1,5 @@
 import React from 'react'
-import { Products } from'../Data/Tvdata';
-import { FaStar } from 'react-icons/fa';
+import { Tvdata } from'../Data/Tvdata';
 import Sidenav from '../Componends/Sidenav';
 import {Row , Col} from 'react-bootstrap'
 import Header from '../Componends/Header'
@@ -16,20 +15,18 @@ function Tv() {
   
      <div className='flexdirection'>
     {
-      Products.map((e) =>{
+      Tvdata.map((e) =>{
         return (
-          <Link to={`/Tv/${e.id}`}>
+          <Link to={`/Tv/${e.id}`} className="product-link">
 
-          <div className='all'>
-         
-         <img src={e.image} alt={e.Brand} style={{ width: '250px' }} />
+          <div className="product-card">
+          <img src={e.image} alt={e.Brand} className="product-image"/>
+         <div className="product-details">
               <p><strong>Id : </strong>{e.id}</p>
               <p><strong>Brand : </strong>{e.Brand}</p>
               <p><strong>Colour : </strong>{e.Colour}</p>
               <p><strong>Price : </strong>{e.price}/-</p>
-             <p className='rating'>{e.rating} { <FaStar /> } <FaStar /> <FaStar /></p>
-
-
+           </div>
             </div>
             </Link>
         )})

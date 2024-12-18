@@ -1,4 +1,4 @@
-export const Products = [
+export const Laptopdata = [
     {
       id: 1,
       Brand: "Lenovo",

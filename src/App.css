@@ -31,35 +31,15 @@ header{
     padding: 20%;
    
 }
-.flexdirection{
-    background-color: bisque;
 
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-}
-.all{
-    background-color: rgb(222, 225, 227);
-    color: rgb(12, 12, 12);
-    border: 2px solid black;
-    border-radius: 10px;
-    height: 400px;
-    width: 250px;
-    margin: 20px;
-    text-align: center;
-}
-.all img{
-    height: 190px;
-    width: 250px;
-    padding: 10px;
-    border-radius: 5%;
-}
+
+
+
+
+
 .dash{
     background-color: beige;
-  
-   
-    align-items: center;
+     align-items: center;
     color: rgb(12, 12, 12);
     border: 2px solid black;
     border-radius: 10px;
@@ -74,3 +54,60 @@ header{
     padding: 10px;
     border-radius: 5%;  
 }
+.dash:hover {
+  transform: translateY(-10px); /* Slight upward movement */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+/* Remove underlines from Links */
+.product-link {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Ensure text color matches the surrounding text */
+  }
+  
+  /* Styling for the container that holds all products */
+  .flexdirection{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+  }
+  
+  /* Card-like layout for individual product items */
+  .product-card {
+    background-color: #f8f9fa; /* Light background */
+    border: 1px solid #131212; /* Light border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 10px;
+    margin: 20px;
+    text-align: center;
+    height: 450px;
+    width: 250px; /* Fixed width for the product card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+  }
+  
+  /* Image styling for product */
+  .product-image {
+    width: 100%; /* Ensures image fills the width of the card */
+    height: 200; /* Maintains aspect ratio */
+    max-height: 300px; /* Limits height for better alignment */
+    object-fit: contain; /* Keeps the image inside the box without stretching */
+    border-radius: 8px; /* Rounded corners for the image */
+  }
+  
+  /* Hover effect for product cards */
+  .product-card:hover {
+    transform: translateY(-5px); /* Slight upward movement */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+  }
+  
+  /* Styling for product details */
+  .product-details p {
+    font-size: 14px;
+    margin: 5px 0; /* Adds spacing between text elements */
+  }
+  
+  .product-details strong {
+    color: #007bff; /* Highlight labels in blue */
+  }
+  

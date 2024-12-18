@@ -1,4 +1,4 @@
-export const Products = [
+export const  Earbudsdata = [
     {
         id: 1,
         Brand: "oneplus",

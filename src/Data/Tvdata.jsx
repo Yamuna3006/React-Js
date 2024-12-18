@@ -1,4 +1,4 @@
-export const Products = [
+export const Tvdata = [
     {
         id: 1,
         Brand: "product-1",
