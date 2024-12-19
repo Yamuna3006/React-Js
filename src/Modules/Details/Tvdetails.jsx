@@ -1,47 +1,56 @@
-import React, { useState } from 'react'
-import { useParams } from 'react-router-dom'
-import { Col, Row } from 'react-bootstrap'
-import Sidenav from '../../Componends/Sidenav'
+import React from 'react';
+import { useParams } from 'react-router-dom';
+import { Col, Row } from 'react-bootstrap';
+import { useCart } from '../../Componends/context/Cartcontext'; 
+import Sidenav from '../../Componends/Sidenav';
+import Header from '../../Componends/Header';
+import { Tvdata } from '../../Data/Tvdata';
 
+function Tvdetails() {
+  const { addToCart } = useCart(); 
+  let { id } = useParams(); 
+  let productDet = Tvdata.find((item) => item.id == id); 
 
-import {Tvdata } from '../../Data/Tvdata'
+  
+  if (!productDet) {
+    return <p>Product not found</p>;
+  }
 
-import Header from '../../Componends/Header'
+  
+  const handleAddToCart = () => {
+    addToCart(productDet); 
+  };
 
-
-    function Tvdetails() {
-    const [cart , setCart] = useState(0)
-    let { id } = useParams()
-    let productDet = Tvdata.find((item) => item.id == id)
-    return (
-        <div>
-
-<Row>
-
-      <Header/>
-      <Col sm={2}>
-       <Sidenav/>
-      </Col>
-      <Col sm={10}>
-      <div className='container d-flex justify-content-around border bg-dark text-light rounded align-items-center py-4'>
-        <div className='data'>
-                <p>{cart}</p>
-                <p>{productDet.id}</p>
-                <p>{productDet.Color}</p>
-                <p>{productDet.Brand}</p>
-                <p>{productDet.Price}</p>
-
-             <button className='btn btn-outline-primary' onClick={()=>setCart(cart+1)}>add to cart</button>
-         </div>
-         <div className='product'>
-           <img src={productDet.image} style={{ width: "300px", height:"200px" }} alt="" />
-         </div>
-        </div>
-    </Col>
-</Row>    
+  return (
+    <div>
+      <Row>
+        <Col sm={2}>
+          <Sidenav />
+        </Col>
+        <Col sm={10}>
+          <Header />
+          <div className="container d-flex justify-content-around border bg-warning text-dark rounded align-items-center py-4">
+            <div className="data">
+              <p>Product ID: {productDet.id}</p>
+              <p>Color: {productDet.Color}</p>
+              <p>Brand: {productDet.Brand}</p>
+              <p>Price: ₹{productDet.price}</p>
+              <button className="btn btn-outline-primary" onClick={handleAddToCart}>
+                Add to Cart
+              </button>
+            </div>
+            <div className="product">
+              <img
+                src={productDet.image}
+                style={{ width: '300px', height: '200px' }}
+                alt={productDet.name}
+              />
+            </div>
+          </div>
+        </Col>
+      </Row>
     </div>
-
-    )
+  );
 }
 
-export default Tvdetails
+export default Tvdetails;

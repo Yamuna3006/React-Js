@@ -32,17 +32,17 @@ function Budsdetails() {
           <div className="container d-flex justify-content-around border bg-warning text-dark rounded align-items-center py-4">
             <div className="data">
               <p>Product ID: {productDet.id}</p>
-              <p>Color: {productDet.Color}</p>
               <p>Brand: {productDet.Brand}</p>
+              <p>Color: {productDet.Color}</p>
               <p>Price: ₹{productDet.Price}</p>
               <button className="btn btn-outline-primary" onClick={handleAddToCart}>
                 Add to Cart
               </button>
             </div>
-            <div className="product">
+            <div className="product  rounded">
               <img
                 src={productDet.image}
-                style={{ width: '300px', height: '200px' }}
+                style={{ width: '300px', height: '200px', borderRadius:'10px' }}
                 alt={productDet.name}
               />
             </div>

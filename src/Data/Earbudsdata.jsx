@@ -2,91 +2,103 @@ export const  Earbudsdata = [
     {
         id: 1,
         Brand: "oneplus",
-        price: 1500,
-        image: "https://img.freepik.com/free-photo/still-life-wireless-cyberpunk-headphones_23-2151072189.jpg?ga=GA1.1.860176100.1723522730&semt=ais_hybrid"
+        Color: "  Starry Black",
+        Price: 1500,
+        image: "https://rukminim2.flixcart.com/image/612/612/xif0q/headphone/l/x/x/nord-buds-3-pro-oneplus-original-imah2ax8jjdyxyv3.jpeg?q=70"
     },
 
 
     {
         id: 2,
         Brand: "boat",
-        price: 1499,
-        image: "https://img.freepik.com/free-photo/wireless-earbuds-with-neon-cyberpunk-style-lighting_23-2151074269.jpg?ga=GA1.1.860176100.1723522730&semt=ais_hybrid "
+        Color:"Cool Sapphire",
+        Price: 1499,
+        image: "https://rukminim2.flixcart.com/image/612/612/xif0q/headphone/l/k/i/-original-imah3zvdp7ucukjr.jpeg?q=70 "
     },
 
     {
         id: 3,
         Brand: "Boult",
+        Color:"Midniht",
         price: 999,
-        image: "https://img.freepik.com/free-photo/still-life-wireless-cyberpunk-headphones_23-2151072190.jpg?ga=GA1.1.860176100.1723522730&semt=ais_hybrid"
+        image: "https://rukminim2.flixcart.com/image/612/612/xif0q/headphone/x/4/9/-original-imagtr2nezygmu4f.jpeg?q=70"
     },
 
 
     {
         id: 4,
-        Brand: "nothing",
+        Brand: "Nord Buds 2R",
+        Color:"Triple Blu",
         Price: 799,
-        image: "https://img.freepik.com/free-photo/still-life-wireless-cyberpunk-headphones_23-2151072231.jpg?ga=GA1.1.860176100.1723522730&semt=ais_hybrid "
+        image: "https://rukminim2.flixcart.com/image/612/612/xif0q/headphone/v/y/i/-original-imagr4t8mwhmtyg9.jpeg?q=70 "
     },
 
     {
         id: 5,
-        Brand: "oppo",
-        price: 1500,
-        image: "https://img.freepik.com/free-photo/still-life-wireless-cyberpunk-headphones_23-2151072189.jpg?ga=GA1.1.860176100.1723522730&semt=ais_hybrid"
+        Brand: "realme",
+        Color:"Deep sea blue",
+        Price: 1500,
+        image: "https://rukminim2.flixcart.com/image/612/612/xif0q/headphone/1/x/j/-original-imagsgfbgrfhy7vm.jpeg?q=70"
     },
 
 
     {
         id: 6,
-        Brand: "nothing",
-        price: 1499,
-        image: "https://img.freepik.com/free-photo/wireless-earbuds-with-neon-cyberpunk-style-lighting_23-2151074269.jpg?ga=GA1.1.860176100.1723522730&semt=ais_hybrid "
+        Brand: "Apple",
+        Color:"White",
+        Price: 1499,
+        image: "https://rukminim2.flixcart.com/image/300/300/xif0q/headphone/e/a/f/-original-imagtc44nk4b3hfg.jpeg?q=90 "
     },
 
     {
         id: 7,
         Brand: "oppo",
-        price: 999,
-        image: "https://img.freepik.com/free-photo/still-life-wireless-cyberpunk-headphones_23-2151072190.jpg?ga=GA1.1.860176100.1723522730&semt=ais_hybrid"
+        Color:"Midniht",
+        Price: 999,
+        image: "https://rukminim2.flixcart.com/image/612/612/xif0q/headphone/p/r/z/enco-buds-2-oppo-original-imagh9frfp7gxdb3.jpeg?q=70"
     },
 
 
     {
         id: 8,
         Brand: "boult",
+        Color:" Green",
         Price: 799,
-        image: "https://img.freepik.com/free-photo/still-life-wireless-cyberpunk-headphones_23-2151072231.jpg?ga=GA1.1.860176100.1723522730&semt=ais_hybrid "
+        image: "https://rukminim2.flixcart.com/image/300/300/xif0q/headphone/m/j/q/-original-imagsqk42jqbvkgu.jpeg?q=90 "
     },
 
     {
         id: 9,
         Brand: "boat",
-        price: 1500,
-        image: "https://img.freepik.com/free-photo/still-life-wireless-cyberpunk-headphones_23-2151072189.jpg?ga=GA1.1.860176100.1723522730&semt=ais_hybrid"
+        Color: "black",
+        Price: 1500,
+        image: "https://rukminim2.flixcart.com/image/612/612/xif0q/headphone/1/l/x/-original-imah5vq5c7tpzzuh.jpeg?q=70"
     },
 
 
     {
         id: 10,
         Brand: "realme",
-        price: 1499,
-        image: "https://img.freepik.com/free-photo/wireless-earbuds-with-neon-cyberpunk-style-lighting_23-2151074269.jpg?ga=GA1.1.860176100.1723522730&semt=ais_hybrid "
+        Color: "blue",
+        Price: 1499,
+        image: " https://rukminim2.flixcart.com/image/612/612/xif0q/headphone/f/y/f/-original-imahy3uqgtzmdsge.jpeg?q=70"
     },
 
     {
         id: 11,
         Brand: "boat",
-        price: 999,
-        image: "https://img.freepik.com/free-photo/still-life-wireless-cyberpunk-headphones_23-2151072190.jpg?ga=GA1.1.860176100.1723522730&semt=ais_hybrid"
+        Color: "Black",
+        Price: 999,
+        image: "https://rukminim2.flixcart.com/image/300/300/xif0q/headphone/q/m/s/-original-imah3zvdthupfejc.jpeg?q=90"
     },
 
 
     {
         id: 12,
-        Brand: "boult",
+        Brand: "MV7N2HN/A",
+        Color: "White",
         Price: 799,
-        image: "https://img.freepik.com/free-photo/still-life-wireless-cyberpunk-headphones_23-2151072231.jpg?ga=GA1.1.860176100.1723522730&semt=ais_hybrid "
+        image: "https://rukminim2.flixcart.com/image/300/300/kpinwy80/headphone/x/r/e/mmef2hn-a-apple-original-imag3qe9hphsevrt.jpeg?q=90"
     },
 
 

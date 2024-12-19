@@ -15,7 +15,6 @@ import Mobiledetails from './Modules/Details/Mobiledetails';
 import Tvdetails from './Modules/Details/Tvdetails';
 import Cart from './Componends/Cart';
 import { CartProvider } from './Componends/context/Cartcontext';
-import Topbar from './Componends/Topbar';
 import Sidenav from './Componends/Sidenav';
 function App() {
   return (
@@ -36,7 +35,6 @@ function App() {
           <Route path='/laptop/:id' element={<Laptopdetails />}></Route>
           <Route path='/tv/:id' element={<Tvdetails />}></Route>
           <Route path='/cart' element={<Cart />}></Route>
-          <Route path='/topbar' element={<Topbar />}></Route>
         </Routes>
         </CartProvider>
       </Router>
