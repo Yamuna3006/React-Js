@@ -22,9 +22,7 @@ function App() {
       <Router>
         <CartProvider>
           <Routes>
-          <Route path='/
-          login
-          ' element={<Login />}></Route>
+          <Route path='/React-Js' element={<Login />}></Route>
           <Route path='/signup' element={<Signup />}></Route>
           <Route path='/sidenav' element={<Sidenav />}></Route>
           <Route path='/dashboard' element={<Dashboard />}></Route>
