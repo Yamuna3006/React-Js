@@ -4,12 +4,12 @@ import { Col, Row } from 'react-bootstrap';
 import { useCart } from '../../Componends/context/Cartcontext'; 
 import Sidenav from '../../Componends/Sidenav';
 import Header from '../../Componends/Header';
-import { Mobiledata} from '../../Data/Mobiledata';
+import { Watchdata} from '../../Data/Watchdata';
 
-function Mobiledetails() {
+function Watchdetails() {
   const { addToCart } = useCart(); 
   let { id } = useParams(); 
-  let productDet = Mobiledata.find((item) => item.id == id); 
+  let productDet = Watchdata.find((item) => item.id == id); 
 
   
   if (!productDet) {
@@ -32,7 +32,7 @@ function Mobiledetails() {
           <div className="container d-flex justify-content-around border bg-warning text-dark rounded align-items-center py-4">
             <div className="data">
               <p>Product ID: {productDet.id}</p>
-              <p>Color: {productDet.Colour}</p>
+              <p>Color: {productDet.Color}</p>
               <p>Brand: {productDet.Brand}</p>
               <p>Price: ₹{productDet.price}</p>
               <button className="btn btn-outline-primary" onClick={handleAddToCart}>
@@ -53,4 +53,4 @@ function Mobiledetails() {
   );
 }
 
-export default Mobiledetails;
+export default Watchdetails;

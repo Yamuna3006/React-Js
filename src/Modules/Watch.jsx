@@ -3,11 +3,12 @@ import React from 'react';
 import Header from '../Componends/Header'
 import Sidenav from '../Componends/Sidenav';
 import { Link } from 'react-router-dom';
-import {Mobiledata} from '../Data/Mobiledata'
+import {Watchdata} from '../Data/Watchdata';
 
 
 
-function Mobile() {
+
+function Watch() {
         
   return (
   <Row>
@@ -20,15 +21,15 @@ function Mobile() {
      <div>
      <div className='flexdirection'>
        {
-        Mobiledata.map((e) =>{
+        Watchdata.map((e) =>{
            return (
-            <Link to={`/mobile/${e.id}`}  className="product-link">
+            <Link to={`/watch/${e.id}`}  className="product-link">
                <div className="product-cardi">
              <img src={e.image} alt={e.Brand}  className="product-image" />
                <div className="product-details">
                             <p><strong>Id : </strong>{e.id}</p>
                             <p><strong>Brand : </strong>{e.Brand}</p>
-                            <p><strong>Colour : </strong>{e.Colour}</p>
+                            <p><strong>Colour : </strong>{e.Color}</p>
                             <p><strong>Price : </strong>{e.price}/-</p>
               
                </div>
@@ -50,7 +51,7 @@ function Mobile() {
   )
 }
 
-export default Mobile
+export default Watch
            
 
 

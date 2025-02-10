@@ -1,4 +1,4 @@
-form input{
+code .card:hover form input{
     border-radius: 20px;
     margin-bottom:5% ;
     padding-right: 100px;
@@ -74,6 +74,18 @@ header{
   
   /* Card-like layout for individual product items */
   .product-card {
+    background-color: #f8f9fa; /* Light background */
+    border: 1px solid #131212; /* Light border */
+    border-radius: 20px; /* Rounded corners */
+    padding: 10px;
+    margin: 20px;
+    text-align: center;
+    height: 300px;
+    width: 250px; /* Fixed width for the product card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+  }
+  .product-cardi {
     background-color: #f8f9fa; /* Light background */
     border: 1px solid #131212; /* Light border */
     border-radius: 20px; /* Rounded corners */

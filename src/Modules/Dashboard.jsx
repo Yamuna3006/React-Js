@@ -5,6 +5,7 @@ import { Mobiledata } from '../Data/Mobiledata';
 import {Earbudsdata} from '../Data/Earbudsdata'
 import {Laptopdata} from '../Data/Laptopdata'
 import {Tvdata} from '../Data/Tvdata'
+import {Watchdata} from '../Data/Watchdata'
  // Simplified import statement
 import { Row, Col, Button, Card } from 'react-bootstrap'; // Use Card from React Bootstrap for a clean UI
 
@@ -13,6 +14,8 @@ const Dashboard = () => {
   const display1 = Earbudsdata.slice(0, 4);
   const display2 = Laptopdata.slice(0, 4);
   const display3 = Tvdata.slice(0, 4);
+  const display4 = Watchdata.slice(0,4);
+
 
   const renderProductSection = (title, data, route) => (
     <div className="content-wrapper mb-5">
@@ -58,6 +61,7 @@ const Dashboard = () => {
             {renderProductSection("Earbuds Collections", display1, '/Earbuds')}
             {renderProductSection("Laptop Collections", display2, '/Laptop')}
             {renderProductSection("TV Collections", display3, '/Tv')}
+            {renderProductSection("Watch Collections", display4, '/Watch')}
           </div>
         </Col>
       </Row>

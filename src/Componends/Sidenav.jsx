@@ -10,6 +10,8 @@ function Sidenav() {
       <Link to="/laptop"><li>Laptops</li></Link>
       <Link to="/earbuds"><li>Earbuds</li></Link>
       <Link to="/tv"><li>TV</li></Link>
+      <Link to="/watch"><li>Watchs</li></Link>
+
     </ul>
     </div>
   )

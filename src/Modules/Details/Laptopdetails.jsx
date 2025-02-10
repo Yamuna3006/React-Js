@@ -42,7 +42,7 @@ function Laptopdetails() {
             <div className="product">
               <img
                 src={productDet.image}
-                style={{ width: '300px', height: '200px' }}
+                style={{ width: '300px', height: '400px',borderRadius:'10px' }}
                 alt={productDet.name}
               />
             </div>
