@@ -26,8 +26,8 @@ function Cart() {
 
               <span> Id: {item.id}</span><br/>
               <span>Brand: {item.Brand}</span><br/>
-              <span>Color: {item.color}</span><br/>
-              <span> Price: ₹{item.price}</span><br/>
+              <span>Color: {item.Color}</span><br/>
+              <span> Price: ₹{item.Price}</span><br/>
             <button  className="btn btn-danger" onClick={() => removeFromCart(item.id)}>Remove</button>
           </div>
             </div>

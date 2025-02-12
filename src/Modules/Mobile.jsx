@@ -28,8 +28,8 @@ function Mobile() {
                <div className="product-details">
                             <p><strong>Id : </strong>{e.id}</p>
                             <p><strong>Brand : </strong>{e.Brand}</p>
-                            <p><strong>Colour : </strong>{e.Colour}</p>
-                            <p><strong>Price : </strong>{e.price}/-</p>
+                            <p><strong>Colour : </strong>{e.Color}</p>
+                            <p><strong>Price : </strong>{e.Price}/-</p>
               
                </div>
                </div>

@@ -6,25 +6,26 @@ function Header() {
   const { cart } = useCart();
 
   return (
-    <div>
-      <header>
-        <Link to="/">
-          <button type="button" className="btn btn-outline-success m-3">
-            Login
-          </button>
-        </Link>
-        <Link to="/signup">
-          <button type="button" className="btn btn-outline-success m-3">
-            Signup
-          </button>
-        </Link>
-        <Link to="/Cart">
-          <button className="btn btn-primary w-5 mt-3">
-            Cart ({cart.length})
-          </button>
-        </Link>
-      </header>
-    </div>
+   <div>
+    <header>
+       <div className='side' >
+           <ul className='side-list'>
+           <li><Link to="/dashboard" className='side-link'>Dashboard</Link></li>
+           <li><Link to="/mobile" className='side-link'>Mobile</Link></li>
+           <li><Link to="/laptop" className='side-link'>Laptops</Link></li>
+           <li><Link to="/earbuds" className='side-link'>Earbuds</Link></li>
+           <li><Link to="/tv" className='side-link'>TV</Link></li>
+           <li><Link to="/watch"  className='side-link'>Watchs</Link></li>
+           <li><Link to="/Cart">
+                 <button className="btn btn-warning w-5 mt-3">
+                   Cart ({cart.length})
+                   </button>
+             </Link></li>
+           </ul>
+           </div>
+           </header>
+           </div>
+      
   );
 }
 

@@ -2,7 +2,7 @@ export const Laptopdata = [
     {
       id: 1,
       Brand: "Lenovo",
-      price: 25000,
+      Price: 25000,
       Color: "Black",
      image: "https://img.freepik.com/free-photo/laptop-with-blank-black-screen-white-table_53876-97915.jpg?semt=ais_hybrid"
     },
@@ -11,7 +11,7 @@ export const Laptopdata = [
     {
       id: 2,
       Brand: "Dell",
-      price: 35000,
+      Price: 35000,
       Color: "Black",
      image: "https://img.freepik.com/free-photo/laptop-device-with-minimalist-monochrome-background_23-2150763336.jpg?semt=ais_hybrid "
     },
@@ -19,7 +19,7 @@ export const Laptopdata = [
     {
       id: 3,
       Brand: "HP",
-      price: 45000,
+      Price: 45000,
       Color: "Silver",
       image: "https://m.media-amazon.com/images/I/519+inA52dL._AC_UY218_.jpg"
     },
@@ -36,7 +36,7 @@ export const Laptopdata = [
     {
       id: 5,
       Brand: "Lenovo",
-      price: 25000,
+      Price: 25000,
       Color: "Sliver",
       image: "https://m.media-amazon.com/images/I/51sxGjeY3GL._AC_UY218_.jpg"
     },
@@ -45,7 +45,7 @@ export const Laptopdata = [
     {
       id: 6,
       Brand: "Dell",
-      price: 35000,
+      Price: 35000,
       Color: "Black",
       image: "https://m.media-amazon.com/images/I/71c5yZ-WuaL._AC_CR0%2C0%2C0%2C0_SX480_SY360_.jpg"
     },
@@ -53,7 +53,7 @@ export const Laptopdata = [
     {
       id: 7,
       Brand: "HP",
-      price: 45000,
+      Price: 45000,
       Color: "Black",
       image: "https://m.media-amazon.com/images/I/61HoUL4ChjL._AC_UY218_.jpg"
     },
@@ -71,7 +71,7 @@ export const Laptopdata = [
     {
       id: 9,
       Brand: "Lenovo",
-      price: 25000,
+      Price: 25000,
       Color: "Black",
       image: "https://img.freepik.com/free-photo/laptop-with-blank-black-screen-white-table_53876-97915.jpg?semt=ais_hybrid"
     },
@@ -80,7 +80,7 @@ export const Laptopdata = [
     {
       id: 10,
       Brand: "Dell",
-      price: 35000,
+      Price: 35000,
       Color: "Black",
       image: "https://m.media-amazon.com/images/I/61boVtem6gL._AC_CR0%2C0%2C0%2C0_SX480_SY360_.jpg "
     },
@@ -88,7 +88,7 @@ export const Laptopdata = [
     {
       id: 11,
       Brand: "HP",
-      price: 45000,
+      Price: 45000,
       Color: "Black",
       image: "https://m.media-amazon.com/images/I/51ksgjS71zL._AC_UY218_.jpg"
     },

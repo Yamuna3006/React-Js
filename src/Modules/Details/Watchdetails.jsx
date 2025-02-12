@@ -34,7 +34,7 @@ function Watchdetails() {
               <p>Product ID: {productDet.id}</p>
               <p>Color: {productDet.Color}</p>
               <p>Brand: {productDet.Brand}</p>
-              <p>Price: ₹{productDet.price}</p>
+              <p>Price: {productDet.Price}</p>
               <button className="btn btn-outline-primary" onClick={handleAddToCart}>
                 Add to Cart
               </button>

@@ -1,95 +1,104 @@
 export const Tvdata = [
     {
         id: 1,
-        Brand: "product-1",
-        price: 15000,
-        image: "https://img.freepik.com/free-psd/modern-tv-screen-isolated_23-2151430324.jpg?semt=ais_hybrid"
+        Brand: "SKYWALL",
+        Price: 15000,
+        Color: "Black",
+        image: "https://m.media-amazon.com/images/I/71HI+VF6ZXL._AC_UY218_.jpg"
     },
 
 
     {
         id: 2,
-        Brand: "product-2",
-        price: 14999,
-        image: "https://img.freepik.com/free-psd/modern-tv-isolated_23-2151430330.jpg?semt=ais_hybrid "
+        Brand: "LG",
+        Price: 14999,
+        Color: "Dark Iron Gray",
+        image: "https://m.media-amazon.com/images/I/71ydzmWXW0L._AC_UY218_.jpg"
     },
 
     {
         id: 3,
-        Brand: "product-3",
-        price: 16999,
-        image: "https://img.freepik.com/free-vector/modern-smart-tv-receiver-with-setup-box-lcd-screen-remote-controller-realistic-vector-illustration_1284-81652.jpg?semt=ais_hybrid"
+        Brand: "VW",
+        Price: 16999,
+        Color: "Black",
+        image: "https://m.media-amazon.com/images/I/71RMJHjJa0L._AC_UY218_.jpg"
     },
-
 
     {
         id: 4,
-        Brand: "product-4",
+        Brand: "Samsung",
         Price: 11999,
-        image: "https://img.freepik.com/free-photo/tv-nature-concept_23-2150246100.jpg?semt=ais_hybrid "
+        Color: "Dark Iron Gray",
+        image: "https://m.media-amazon.com/images/I/71ax3phCOVL._AC_UY218_.jpg"
     },
-
 
     {
         id: 5,
-        Brand: "product-1",
-        price: 15000,
-        image: "https://img.freepik.com/free-psd/modern-tv-screen-isolated_23-2151430324.jpg?semt=ais_hybrid"
+        Brand: "Xiaomi ",
+        Price: 15000,
+        Color: "Black",
+        image: "https://m.media-amazon.com/images/I/71HI+VF6ZXL._AC_UL320_.jpg"
     },
 
 
     {
         id: 6,
-        Brand: "product-2",
-        price: 14999,
-        image: "https://img.freepik.com/free-psd/modern-tv-isolated_23-2151430330.jpg?semt=ais_hybrid "
+        Brand: "TCL",
+        Price: 14999,
+        Color: "Black",
+        image: "https://m.media-amazon.com/images/I/71zFdS29uFL._AC_UY218_.jpg"
     },
-
     {
         id: 7,
-        Brand: "product-3",
-        price: 8999,
-        image: "https://img.freepik.com/free-vector/modern-smart-tv-receiver-with-setup-box-lcd-screen-remote-controller-realistic-vector-illustration_1284-81652.jpg?semt=ais_hybrid"
+        Brand: "SKYWALL",
+        Price: 8999,
+        Color: "Black",
+        image: "https://m.media-amazon.com/images/I/71Zb5htUKfL._AC_UY218_.jpg"
     },
 
 
     {
         id: 8,
-        Brand: "product-4",
+        Brand: "Onida",
         Price: 14999,
-        image: "https://img.freepik.com/free-photo/tv-nature-concept_23-2150246100.jpg?semt=ais_hybrid "
+        Color: "Black",
+        image: "https://m.media-amazon.com/images/I/81Pfr6zsLOL._AC_UY218_.jpg"
     },
 
 
 
     {
         id: 9,
-        Brand: "product-1",
-        price: 16000,
-        image: "https://img.freepik.com/free-psd/modern-tv-screen-isolated_23-2151430324.jpg?semt=ais_hybrid"
+        Brand: "Sony BRAVIA ",
+        Price: 16000,
+        Color: "Black",
+        image: "https://m.media-amazon.com/images/I/81BENnbPpuL._AC_UY218_.jpg"
     },
 
 
     {
         id: 10,
-        Brand: "product-2",
-        price: 15999,
-        image: "https://img.freepik.com/free-psd/modern-tv-isolated_23-2151430330.jpg?semt=ais_hybrid "
+        Brand: "Acer",
+        Price: 15999,
+        Color: "Black",
+        image: "https://m.media-amazon.com/images/I/71z6h0pIzyL._AC_UY218_.jpg"
     },
 
     {
         id: 11,
-        Brand: "product-3",
-        price: 16999,
-        image: "https://img.freepik.com/free-vector/modern-smart-tv-receiver-with-setup-box-lcd-screen-remote-controller-realistic-vector-illustration_1284-81652.jpg?semt=ais_hybrid"
+        Brand: "TOSHIBA",
+        Price: 16999,
+        Color: "Black",
+        image: "https://m.media-amazon.com/images/I/81zHdDIN1vL._AC_UY218_.jpg"
     },
 
 
     {
         id: 12,
-        Brand: "product-4",
+        Brand: "Mi Xiaomi ",
         Price: 17999,
-        image: "https://img.freepik.com/free-photo/tv-nature-concept_23-2150246100.jpg?semt=ais_hybrid "
+        Color: "Black",
+        image: "https://m.media-amazon.com/images/I/81FSvQN4nIL._AC_UL640_QL65_.jpg"
     },
 
 

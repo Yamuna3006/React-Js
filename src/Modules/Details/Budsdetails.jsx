@@ -34,7 +34,7 @@ function Budsdetails() {
               <p>Product ID: {productDet.id}</p>
               <p>Brand: {productDet.Brand}</p>
               <p>Color: {productDet.Color}</p>
-              <p>Price: ₹{productDet.Price}</p>
+              <p>Price: {productDet.Price}</p>
               <button className="btn btn-outline-primary" onClick={handleAddToCart}>
                 Add to Cart
               </button>
