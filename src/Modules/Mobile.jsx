@@ -1,9 +1,10 @@
 import React from 'react';
- import {Row , Col} from 'react-bootstrap'
+ import {Row , Col ,Card} from 'react-bootstrap'
 import Header from '../Componends/Header'
-import Sidenav from '../Componends/Sidenav';
 import { Link } from 'react-router-dom';
 import {Mobiledata} from '../Data/Mobiledata'
+import '../App.css'; // Make sure to create this CSS file for custom styling.
+
 
 
 
@@ -12,35 +13,38 @@ function Mobile() {
   return (
   <Row>
     <Header/>
-    <Col sm={2}>
-     <Sidenav/>
-    </Col>
-    <Col sm={10}>
-
-     <div>
-     <div className='flexdirection'>
-       {
-        Mobiledata.map((e) =>{
-           return (
-            <Link to={`/mobile/${e.id}`}  className="product-link">
-               <div className="product-cardi">
-             <img src={e.image} alt={e.Brand}  className="product-image" />
-               <div className="product-details">
-                            <p><strong>Id : </strong>{e.id}</p>
-                            <p><strong>Brand : </strong>{e.Brand}</p>
-                            <p><strong>Colour : </strong>{e.Color}</p>
-                            <p><strong>Price : </strong>{e.Price}/-</p>
+    
+    <Col sm={12}>
+    <div className="product-list"
+        style={{ marginTop: '140px' }}>
+          {Mobiledata.map((e) => {
+            return (
               
-               </div>
-               </div>
-               </Link>
+                <Link to={`/mobile/${e.id}`} className="product-link">
+                  <Card className="product-card">
+                    <Card.Img variant="top" src={e.image} alt={e.Brand} className="product-image" />
+                    <Card.Body>
+                      <Card.Title>{e.Brand}</Card.Title>
+                      <Card.Text>
+                        <strong>Color:</strong> {e.Color}
+                      </Card.Text>
+                      <Card.Text>
+                        <strong>Price:</strong> {e.Price}/-
+                      </Card.Text>
+                    </Card.Body>
+                  </Card>
+                </Link>
+            
+
+    
+    
  
             
              
          )})
        }
      </div>
-     </div>
+     
     
     </Col>
     

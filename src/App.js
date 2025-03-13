@@ -4,7 +4,6 @@ import './App.css'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Login from './Componends/Login';
 import Signup from './Componends/Signup';
-import Sidenav from './Componends/Sidenav';
 import Dashboard from './Modules/Dashboard';
 import Earbuds from './Modules/Earbuds';
 import Mobile from './Modules/Mobile';
@@ -27,7 +26,6 @@ function App() {
           <Routes>
           <Route path='/React-Js' element={<Login />}></Route>
           <Route path='/signup' element={<Signup />}></Route>
-          <Route path='/sidenav' element={<Sidenav />}></Route>
           <Route path='/dashboard' element={<Dashboard />}></Route>
           <Route path='/earbuds' element={<Earbuds />}></Route>
           <Route path='/mobile' element={<Mobile />}></Route>

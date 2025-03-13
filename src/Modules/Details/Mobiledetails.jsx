@@ -2,7 +2,6 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import { Col, Row } from 'react-bootstrap';
 import { useCart } from '../../Componends/context/Cartcontext'; 
-import Sidenav from '../../Componends/Sidenav';
 import Header from '../../Componends/Header';
 import { Mobiledata} from '../../Data/Mobiledata';
 
@@ -24,12 +23,11 @@ function Mobiledetails() {
   return (
     <div>
       <Row>
-        <Col sm={2}>
-          <Sidenav />
-        </Col>
-        <Col sm={10}>
+        
+        <Col sm={12}>
           <Header />
-          <div className="container d-flex justify-content-around border bg-warning text-dark rounded align-items-center py-4">
+          <div className="container d-flex justify-content-around border bg-warning text-dark rounded align-items-center py-4"
+          style={{ marginTop: '200px' }}>
             <div className="data">
               <p>Product ID: {productDet.id}</p>
               <p>Color: {productDet.Color}</p>

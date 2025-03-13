@@ -1,32 +1,35 @@
-import Sidenav from '../Componends/Sidenav';
 import { Earbudsdata } from '../Data/Earbudsdata';
-import { Row, Col } from 'react-bootstrap';
+import { Row, Col, Card } from 'react-bootstrap';
 import Header from '../Componends/Header';
 import { Link } from 'react-router-dom';
-
+import '../App.css'; // Make sure to create this CSS file for custom styling.
 
 function Earbuds() {
   return (
     <Row>
       <Header />
-      <Col sm={2}>
-        <Sidenav />
-      </Col>
-      <Col sm={10}>
-        <div className="flexdirection">
+
+      <Col sm={12}>
+        <div className="product-list"
+        style={{ marginTop: '140px' }}>
           {Earbudsdata.map((e) => {
             return (
-              <Link to={`/earbuds/${e.id}`} key={e.id} className="product-link">
-                <div className="product-cardi">
-                  <img src={e.image} alt={e.Brand} className="product-image" />
-                  <div className="product-details">
-                    <p><strong>Id:</strong> {e.id}</p>
-                    <p><strong>Brand:</strong> {e.Brand}</p>
-                    <p><strong>Colour:</strong> {e.Color}</p>
-                    <p><strong>Price:</strong> {e.Price}/-</p>
-                  </div>
-                </div>
-              </Link>
+              
+                <Link to={`/earbuds/${e.id}`} className="product-link">
+                  <Card className="product-card">
+                    <Card.Img variant="top" src={e.image} alt={e.Brand} className="product-image" />
+                    <Card.Body>
+                      <Card.Title>{e.Brand}</Card.Title>
+                      <Card.Text>
+                        <strong>Color:</strong> {e.Color}
+                      </Card.Text>
+                      <Card.Text>
+                        <strong>Price:</strong> {e.Price}/-
+                      </Card.Text>
+                    </Card.Body>
+                  </Card>
+                </Link>
+            
             );
           })}
         </div>
