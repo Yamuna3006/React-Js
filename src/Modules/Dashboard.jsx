@@ -48,7 +48,7 @@ const Dashboard = () => {
   );
 
   return (
-    <div className="container-fluid" style={{ marginTop: '100px' }}>
+    <div className="abc">
       {/* Header should be placed at the top */}
       <Header />
 

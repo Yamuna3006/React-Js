@@ -20,7 +20,7 @@ export const  Earbudsdata = [
         id: 3,
         Brand: "Boult",
         Color:"Midniht",
-        price: 999,
+        Price: 999,
         image: "https://rukminim2.flixcart.com/image/612/612/xif0q/headphone/x/4/9/-original-imagtr2nezygmu4f.jpeg?q=70"
     },
 

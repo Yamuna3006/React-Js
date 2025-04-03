@@ -3,47 +3,53 @@ import { useParams } from 'react-router-dom';
 import { Col, Row } from 'react-bootstrap';
 import { useCart } from '../../Componends/context/Cartcontext'; 
 import Header from '../../Componends/Header';
-import { Tvdata } from '../../Data/Tvdata';
+import { Tvdata } from '../../Data/Tvdata'
 
 function Tvdetails() {
-  const { addToCart } = useCart(); 
-  let { id } = useParams(); 
-  let productDet = Tvdata.find((item) => item.id == id); 
+  const { addToCart } = useCart();
+  let { id } = useParams();
+  let productDet = Tvdata.find((item) => item.id == id);
 
-  
   if (!productDet) {
     return <p>Product not found</p>;
   }
 
-  
   const handleAddToCart = () => {
-    addToCart(productDet); 
+    addToCart(productDet);
   };
 
   return (
     <div>
-      <Row>
-       
-        <Col sm={12}>
-          <Header />
-          <div className="container d-flex justify-content-around border bg-warning text-dark rounded align-items-center py-4"
-          style={{ marginTop: '200px' }}>
-            <div className="data">
-              <p>Product ID: {productDet.id}</p>
-              <p>Color: {productDet.Color}</p>
-              <p>Brand: {productDet.Brand}</p>
-              <p>Price: {productDet.Price}</p>
-              <button className="btn btn-outline-primary" onClick={handleAddToCart}>
-                Add to Cart
-              </button>
-            </div>
-            <div className="product">
-              <img
-                src={productDet.image}
-                style={{ width: '300px', height: '200px' }}
-                alt={productDet.name}
-              />
-            </div>
+      <Header />
+      <Row className="justify-content-center" style={{ marginTop: '100px' }}>
+        <Col sm={12} md={8} lg={6}>
+          <div className="product-box p-3 mt-1 rounded shadow-lg bg-light">
+            <Row className="align-items-center">
+              {/* Left side - Product Info */}
+              <Col xs={12} md={6}>
+                <div className="product-info">
+                  <h2 className="product-title">{productDet.Brand} </h2>
+                  <p><strong>Product ID:</strong> {productDet.id}</p>
+                  <p><strong>Color:</strong> {productDet.Color}</p>
+                  <p><strong>Price:</strong> {productDet.Price}/-</p>
+                  <button className="btn btn-primary " onClick={handleAddToCart}>
+                    Add to Cart
+                  </button>
+                </div>
+              </Col>
+
+              {/* Right side - Product Image */}
+              <Col xs={12} md={6}>
+                <div className="product-image text-center">
+                  <img
+                    src={productDet.image}
+                    alt={productDet.name}
+                    className="img-fluid rounded"
+                    style={{ Width: '250px', height: '180px' }}
+                  />
+                </div>
+              </Col>
+            </Row>
           </div>
         </Col>
       </Row>

@@ -20,14 +20,14 @@ header{
     justify-content: flex-end;
 }
 .side{
-  position: fixed;
+  position: sticky;
   top: 0%;
   padding: 5px;
-  background-color: black;
+  background-color: rgb(36, 36, 36);
   width: 100%;
   display: flex;
   align-items: end;
-  justify-content: space-between;
+  justify-content: end;
   text-decoration: none;
  
 }
@@ -35,19 +35,18 @@ header{
 
   display: flex;
   text-align: center;
-align-items: end;
+  align-items: end;
   justify-content: space-between;
   list-style-type: none;
 }
 .side ul li {
- margin: 10px;
-  display: flex;
-    padding: 20px;
+ margin-top: 25px;
+  display: flex-end;
+    padding: 1px;
     text-decoration: none;
     list-style-type: none;
+    gap: 2px;
 }
-
-
 
 
 
@@ -80,7 +79,7 @@ align-items: end;
     color: inherit; /* Ensure text color matches the surrounding text */
   }
   
-  /* Styling for the container that holds all products */
+  
   .flexdirection{
     margin-top: 150px;
     display: flex;
@@ -146,9 +145,9 @@ align-items: end;
   }
   
  /********************** Dashboard Styles ***************/
-.container-fluid {
+.abc{
   background-color: #f9f9f9;
-  padding-top: 20px;
+  padding-top: 0px;
 }
 
 .content-wrapper {
@@ -275,7 +274,7 @@ h1.display-4 {
   transform: translateY(-10px);
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
 }
-/* **************details**************** */
+/* **************product hover**************** */
 .card:hover {
   transform: translateY(-5px);
   transition: transform 0.3s ease-in-out;
@@ -287,4 +286,37 @@ h1.display-4 {
 
 .card:hover img {
   transform: scale(1.05);
+}
+/* **************details******** */
+/* Add this to your CSS file */
+.product-box {
+  background-color: #fffcfc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 600px;
+}
+
+.product-info{
+  margin-left: 20px;
+ 
+}
+
+.product-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.product-info p {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.product-info button {
+  padding: 10px 20px;
+  font-size: 1.1rem;
+}
+
+.product-image img {
+ 
+  border-radius: 10px;
 }

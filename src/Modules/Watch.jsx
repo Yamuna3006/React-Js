@@ -13,7 +13,7 @@ function Watch() {
       <Header />
         <Col sm={12}>
         <div className="product-list"
-        style={{ marginTop: '140px' }}>
+        style={{ marginTop: '10px' }}>
           {Watchdata.map((e) => {
             return (
               
