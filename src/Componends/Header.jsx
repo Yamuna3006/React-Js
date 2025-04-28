@@ -19,6 +19,8 @@ function Header() {
            <li><Link to="/tv" >     <button type="button" class="btn btn-dark">TV</button></Link></li>
            <li><Link to="/watch" >  <button type="button" class="btn btn-dark">Watch</button></Link></li>
            <li><Link to="/Cart" >   <button className="btn btn-warning w-5 mt-3">Cart ({cart.length})</button></Link></li>
+           <li><Link to="/React-Js" >   <button className="btn btn-warning w-5 mt-3 ">Logout</button></Link></li>
+
            </ul>
            </div>
            </header>

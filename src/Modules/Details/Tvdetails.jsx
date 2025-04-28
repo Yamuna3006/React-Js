@@ -21,7 +21,7 @@ function Tvdetails() {
   return (
     <div>
       <Header />
-      <Row className="justify-content-center" style={{ marginTop: '100px' }}>
+      <Row className="justify-content-center" style={{ marginTop: '300px' }}>
         <Col sm={12} md={8} lg={6}>
           <div className="product-box p-3 mt-1 rounded shadow-lg bg-light">
             <Row className="align-items-center">

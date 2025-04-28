@@ -11,7 +11,7 @@ function Earbuds() {
 
       <Col sm={12}>
         <div className="product-list"
-        style={{ marginTop: '10px' }}>
+        style={{ marginTop: '100px' }}>
           {Earbudsdata.map((e) => {
             return (
               

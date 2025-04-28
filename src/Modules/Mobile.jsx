@@ -16,7 +16,7 @@ function Mobile() {
     
     <Col sm={12}>
     <div className="product-list"
-        style={{ marginTop: '10px' }}>
+        style={{ marginTop: '100px' }}>
           {Mobiledata.map((e) => {
             return (
               
